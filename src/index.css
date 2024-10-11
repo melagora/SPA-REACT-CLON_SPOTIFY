@@ -2,67 +2,211 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
+a{
   text-decoration: inherit;
 }
-a:hover {
-  color: #535bf2;
+
+p {
+  font-weight: 500;
+  color: #89479e;
 }
 
-body {
-  margin: 0;
+a:hover{
+  color: white;
+}
+
+nav ul{
+  background-color: black;
+  width: 100%;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+nav div{
+  display: flex;
+  list-style: none;
+  padding: 20px;
+}
+
+.logo1, .buscador,.explorar, .formularios{
+  margin: 0;
+  padding: 0;
+}
+
+.logo1, .buscador, .formularios{
+  padding: 10px;
+  align-items: center;
+}
+
+.logo1 div{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative; /* Hace que el div sea un contenedor de posicionamiento */
+}
+
+.homeLogo{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #89479e;
+  position: relative; /* Hace que el div sea un contenedor de posicionamiento */
+}
+
+/*Etiqueta* homeLogo*/
+.homeLogo:hover::after, .searchWhite:hover::after, .exploreWhite:hover::after {
+  content: "Inicio";
+  position: absolute;
+  top: 60px;
+  transform: translateX(-40%);
+  background-color: #89479e;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+}
+
+.searchWhite:hover::after{
+  content: "Buscar";
+}
+
+.exploreWhite:hover::after{
+  content: "Explorar";
+}
+
+.explorar{
+  padding-left: 10px;
+}
+
+.input-container{
+  background-color: #89479e;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 40px; /* Ajusta el radio para cambiar la redondez */
+  font-weight: bold;
+  height: 50px;
+  align-items: center;
+}
+
+.input-container:hover {
+  border: none;
+  box-shadow: 0 0 10px #ffffff; /* Borde interior */
+  border-radius: 40px;
+  font-weight: bold;
+  height: 50px;
+}
+
+.input-container input[type="text"]::placeholder {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.input-container input[type="text"] {
+  border: none;
+  background-color: #89479e; 
+  width: 300px; 
+  color: white;
+}
+
+.input-container input:focus{
+  outline: none;
+}
+
+.searchWhite, .exploreWhite{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative; /* Hace que el div sea un contenedor de posicionamiento */
+}
+
+.logo1 div img, .homeLogo img, .searchWhite img, .exploreWhite img {
+  position: absolute; /* Posiciona la imagen absolutamente dentro del div */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra la imagen horizontal y verticalmente */
+  width: 80%; /* Ajusta el ancho de la imagen al ancho del div */
+  height: 80%; /* Ajusta la altura de la imagen a la altura del div */
+  object-fit: cover;
+ /* Hace que la imagen llene todo el espacio disponible del div */
+}
+
+.homeLogo img {
+  width: 70%; /* Ajusta el ancho de la imagen al ancho del div */
+  height: 70%; /* Ajusta la altura de la imagen a la altura del div *//
+}
+
+.form1{
+  /* background-color: #1c1c1c; */
+  border: none;
+  border-radius: 40px; /* Ajusta el radio para cambiar la redondez */
+  font-weight: bold;
+  height: 10px;
+  align-items: center;
+}
+
+.formularios{
+  gap: 10px;
+}
+
+.form2{
+  background-color: #ffffff;
+  border: none;
+  border-radius: 40px; /* Ajusta el radio para cambiar la redondez */
+  font-weight: bold;
+  height: 10px;
+  align-items: center;
+}
+
+.logoInicio:hover,.homeLogo:hover, .form1:hover, .form2:hover{
+  scale: 1.05;
+}
+
+.form2:hover{
+  background-color: #89479e;
+  color: white;
+}
+
+p:hover{
+  color: white;
+}
+
+.form2:hover p {
+  color: white;
+}
+
+body,p {
+  margin: 0;
+  padding: 0;
+}
+
+.info{
+  margin: 0px;
+  padding: 0px;
+  background-color: red;
+  text-align: center;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin: 0;
+  text-align: center;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+  text-align: center;
+  font-size: 14px;
 }
