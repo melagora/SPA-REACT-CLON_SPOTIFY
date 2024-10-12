@@ -1,7 +1,30 @@
-import React from 'react'
+import React from "react";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Registrate from "../Componentes/Registro";
 
 export default function PieDePagina() {
   return (
-    <div>PieDePagina</div>
-  )
+    // <BrowserRouter>
+      <div className="footer">
+        <div className="foot1">
+          <p className="tittleFooter">Muestra de KodiMusic </p>
+          <p className="textFooter">
+            Regístrate para acceder a canciones y podcast ilimitados con algunos
+            anuncios. No necesitas tarjeta de crédito
+          </p>
+        </div>
+        {/* <Link to="/registrate"> */}
+          <div className="foot2">
+            <div className="btnFooter">
+              <p>Regístrate Gratis</p>
+            </div>
+          </div>
+        {/* </Link> */}
+      </div>
+
+    //   {/* <Routes>
+    //     <Route path="/registrate" element={<Registrate />} />
+    //   </Routes>
+    // </BrowserRouter> */}
+  );
 }

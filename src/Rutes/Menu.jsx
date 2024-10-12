@@ -34,7 +34,7 @@ export default function Menu() {
               </div>
               <div className="explorar">
                 <li>
-                  <Link to="explorar">
+                  <Link to="/explorar">
                     <div class="input-container">
                       <div className="searchWhite">
                         <img src={searchWhite} alt="Ícono de búsqueda" />
@@ -51,7 +51,7 @@ export default function Menu() {
             <div className="formularios">
               <div className="form1">
                 <li>
-                  <Link to="registrate">
+                  <Link to="/registrate">
                     <p className="registro">Regístrate</p>
                   </Link>
                 </li>
