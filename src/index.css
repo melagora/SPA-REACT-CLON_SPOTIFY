@@ -435,7 +435,7 @@ aside {
   height: 437px;
 }
 
-.contenedorPrincipalArtistas{
+.contenedorPrincipalInfo{
   height: 440px;
   border-radius: 10px;
   display: flex;
@@ -445,17 +445,17 @@ aside {
 }
 
 /* Para Chrome, Safari y otros navegadores basados en WebKit */
-.contenedorPrincipalArtistas::-webkit-scrollbar {
+.contenedorPrincipalInfo::-webkit-scrollbar {
   width: 10px; /* Ancho de la barra */
 }
 
-.contenedorPrincipalArtistas::-webkit-scrollbar-thumb {
+.contenedorPrincipalInfo::-webkit-scrollbar-thumb {
   background-color: #555; /* Color del pulgar de la barra */
   border-radius: 10px; /* Radio de las esquinas del pulgar */
 }
 
 /* Para Firefox */
-.contenedorPrincipalArtistas::-moz-scrollbar-thumb {
+.contenedorPrincipalInfo::-moz-scrollbar-thumb {
   background-color: #555; /* Color del pulgar de la barra */
   border-radius: 10px; /* Radio de las esquinas del pulgar */
 }
@@ -503,7 +503,7 @@ aside {
 .imagenArtista{
   position: relative;
   width: 100%; /* Ajusta el ancho según tus necesidades */
-  height: 175px;
+  height: 165px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 1);
@@ -520,7 +520,7 @@ aside {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 70%);
+  transform: translate(-50%, 60%);
   background-color: #8a479e;
   border-radius: 50%;
   width: 50px;
@@ -557,6 +557,86 @@ aside {
 .albunArtista .play {
   transform: translate(50%, 60%);
 }
+
+/*Explorar TODO*/
+
+.encabezado_main_Explorar{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.secciones_explorarTodo{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.secciones_explorarTodo div{
+  background-color: #89479e;
+  width: 265px;
+  height: 150px;
+  margin: 20px 20px 0 0 ;
+  border-radius: 30px;
+}
+
+.secciones_explorarTodo div:hover{
+  background-color: #89479e; 
+}
+
+.secciones_explorarTodo div p{
+  margin: 20px;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.secciones_explorarTodo div:nth-child(1) {
+  background-color: rgb(0, 85, 141);
+}
+
+.secciones_explorarTodo div:nth-child(2) {
+  background-color: orange;
+}
+
+.secciones_explorarTodo div:nth-child(3) {
+  background-color: brown;
+}
+
+.secciones_explorarTodo div:nth-child(4) {
+  background-color: green;
+}
+
+.secciones_explorarTodo div:nth-child(5) {
+  background-color: blue;
+}
+
+.secciones_explorarTodo div:nth-child(6) {
+  background-color: indigo;
+}
+
+.secciones_explorarTodo div:nth-child(7) {
+  background-color: violet;
+}
+
+.secciones_explorarTodo div:nth-child(8) {
+  background-color: rgb(130, 0, 22);
+}
+
+.secciones_explorarTodo div:nth-child(9) {
+  background-color: purple;
+}
+
+.secciones_explorarTodo div:nth-child(10) {
+  background-color: brown;
+}
+
+.secciones_explorarTodo div:nth-child(11) {
+  background-color: gray;
+}
+
+.secciones_explorarTodo div:nth-child(12) {
+  background-color: black;
+}
+
+/*Footer*/
   
 .footer {
   display: flex;

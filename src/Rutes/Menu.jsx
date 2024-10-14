@@ -51,13 +51,13 @@ export default function Menu() {
             </div>
           </div>
           <div className="formularios">
-            <div className="form1">
-              <li>
-                <Link to="/registrate">
+            <Link to="/registrate">
+              <div className="form1">
+                <li>
                   <p className="registro">Regístrate</p>
-                </Link>
-              </li>
-            </div>
+                </li>
+              </div>
+            </Link>
             <Link to="iniciar-sesion">
               <div className="form2">
                 <li>

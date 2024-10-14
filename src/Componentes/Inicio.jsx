@@ -9,7 +9,7 @@ export default function Inicio() {
   return (
     <main>
       <div className="info">
-        <div className="contenedorPrincipalArtistas">
+        <div className="contenedorPrincipalInfo">
           <div className="titulo_main">
             <div className="encabezado_main_artistas1">
               <p>Artistas Populares</p>
