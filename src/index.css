@@ -3,7 +3,18 @@
   line-height: 1.5;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #000000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to right, #89479e, #000000);
+  font-size: 14px;
 }
 
 a{
@@ -57,6 +68,7 @@ nav div{
   border-radius: 50%;
   background-color: #89479e;
   position: relative; /* Hace que el div sea un contenedor de posicionamiento */
+  z-index: 1;
 }
 
 /*Etiqueta* homeLogo*/
@@ -71,6 +83,8 @@ nav div{
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   font-weight: 500;
+  display: flex;
+  z-index: 1; /* Asignamos un valor de z-index al aside */
 }
 
 .searchWhite:hover::after{
@@ -182,17 +196,240 @@ body,p {
   padding: 0;
 }
 
-.info{
-  margin: 0px;
-  padding: 0px;
-  text-align: center;
-}
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
   margin: 0;
   text-align: center;
+}
+
+aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 70%;
+  margin: 75px 0 0 7px;
+  background: linear-gradient( #131313, #89479e);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.biblioteca{
+  display: flex;
+  gap: 10px;
+}
+
+.biblioteca div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.biblioteca div img{
+  height: 50%; /* Ajusta la altura de la imagen a la altura del div */
+  object-fit: cover;
+  padding-bottom: 10px;
+}
+
+.biblioteca-div-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.plus div{
+  display:flex;
+  justify-content: center;
+}
+
+.plus img{
+  object-fit: cover;
+  width: 30%; /* Ajusta el ancho de la imagen al ancho del div */
+  height: 30%; /* Ajusta la altura de la imagen a la altura del div */
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.plus img:hover{
+  background-color: #89479e;
+}
+
+.plus div:hover::after {
+  content: "Crea una playlist";
+  position: absolute;
+  top: 60px;
+  transform: translateX(0);
+  background-color: #89479e;
+  color: #ffffff;
+  padding: 5px 10px;
+  margin: 10px;
+  width: 105px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+  display: flex;
+  z-index: 9999; /* Asignamos un valor de z-index al aside */
+}
+
+.bibliotecaLateralContendor1{
+  background-color: #000000;
+  height: 245px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+/* Para Chrome, Safari y otros navegadores basados en WebKit */
+.bibliotecaLateralContendor1::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra */
+}
+
+.bibliotecaLateralContendor1::-webkit-scrollbar-thumb {
+  background-color: #555; /* Color del pulgar de la barra */
+  border-radius: 10px; /* Radio de las esquinas del pulgar */
+}
+
+/* Para Firefox */
+.bibliotecaLateralContendor1::-moz-scrollbar-thumb {
+  background-color: #555; /* Color del pulgar de la barra */
+  border-radius: 10px; /* Radio de las esquinas del pulgar */
+}
+
+.bibliotecaLateralContendor1-UNO{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  text-align: left;
+  margin: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.bibliotecaLateralContendor1-UNO p, .bibliotecaLateralContendor1-DOS p, .bibliotecaLateralContendor1-TRES p{
+  color: white;
+}
+
+.bibliotecaLateralContendor1-DOS{
+  margin: 0 10px;
+  background-color: #131313;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.bibliotecaLateralContendor1-TRES{
+  margin: 10px;
+  background-color: #131313;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.bibliotecaLateralContendor1-DOS button, .bibliotecaLateralContendor1-TRES button{
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 90px;
+  font-weight: bold;
+  height: 45px;
+  width: 170px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.bibliotecaLateralContendor1-DOS button:hover, .bibliotecaLateralContendor1-TRES button:hover{
+  background-color: #89479e;
+  color: white;
+}
+
+.bibliotecaLateralContendor2{
+  background-color: #000000;
+  margin-top: 10px;
+  height: 140px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.bibliotecaLateralContendor2 p {
+  color:white;
+  text-align: left;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.bibliotecaLateralContendor2 a {
+  color:rgb(138, 138, 138);
+  text-align: left;
+}
+
+.bibliotecaLateralContendor2 a:hover {
+  color:rgb(255, 255, 255);
+}
+
+.bibliotecaLateralContendor2-UNO {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.bibliotecaLateralContendor2-DOS p{
+  font-size: 15px;
+}
+.bibliotecaLateralContendor2-DOS a:hover{
+  text-decoration:underline;
+}
+
+.bibliotecaLateralContendor2-TRES{
+  text-align: left;
+  padding-top: 10px;
+}
+
+.bibliotecaLateralContendor2-TRES button{
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #5c5c5c00;
+  border: solid white 1px;
+  border-radius: 90px;
+  font-weight: bold;
+  height: 40px;
+  width: 250px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.bibliotecaLateralContendor2-TRES button:hover{
+  scale: 1.05;
+}
+
+.planet{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.planet img{
+  padding-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+/*etiqueta para cada ruta con la información*/
+.info{
+  margin: 5px 10px 5px 445px;
+  background: linear-gradient( #131313, #89479e);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .footer {
@@ -202,7 +439,7 @@ h1 {
   left: 0;
   bottom: 0;
   width: 100%;
-  background: linear-gradient(to right, #89479e, #000000);
+  background: linear-gradient(to right, #89479e, #131313);
   font-size: 14px;
 }
 

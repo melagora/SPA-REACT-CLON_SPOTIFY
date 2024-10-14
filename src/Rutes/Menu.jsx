@@ -12,61 +12,62 @@ import exploreWhite from "../assets/exploreWhite.png";
 export default function Menu() {
   return (
     <BrowserRouter>
-      <header>
-        <nav>
-          <ul>
-            <div className="logo1">
-              <div className="logoInicio">
-                <li>
-                  <Link to="/">
-                    <img src={KodiMusic} alt="Logo sitio" />
-                  </Link>
-                </li>
-              </div>
+      <nav>
+        <ul>
+          <div className="logo1">
+            <div className="logoInicio">
+              <li>
+                <Link to="/">
+                  <img src={KodiMusic} alt="Logo sitio" />
+                </Link>
+              </li>
             </div>
-            <div className="buscador">
-              <div className="homeLogo">
-                <li>
-                  <Link to="/">
-                    <img src={icoHomeWhite} alt="Home Logo" />
-                  </Link>
-                </li>
-              </div>
-              <div className="explorar">
-                <li>
-                  <Link to="/explorar">
-                    <div class="input-container">
-                      <div className="searchWhite">
-                        <img src={searchWhite} alt="Ícono de búsqueda" />
-                      </div>
-                      <input type="text" placeholder="¿Qué quieres reproducir?..." />
-                      <div className="exploreWhite">
-                        <img src={exploreWhite} alt="Ícono de búsqueda" />
-                      </div>
+          </div>
+          <div className="buscador">
+            <div className="homeLogo">
+              <li>
+                <Link to="/">
+                  <img src={icoHomeWhite} alt="Home Logo" />
+                </Link>
+              </li>
+            </div>
+            <div className="explorar">
+              <li>
+                <Link to="/explorar">
+                  <div className="input-container">
+                    <div className="searchWhite">
+                      <img src={searchWhite} alt="Ícono de búsqueda" />
                     </div>
-                  </Link>
-                </li>
-              </div>
+                    <input
+                      type="text"
+                      placeholder="¿Qué quieres reproducir?..."
+                    />
+                    <div className="exploreWhite">
+                      <img src={exploreWhite} alt="Ícono de búsqueda" />
+                    </div>
+                  </div>
+                </Link>
+              </li>
             </div>
-            <div className="formularios">
-              <div className="form1">
-                <li>
-                  <Link to="/registrate">
-                    <p className="registro">Regístrate</p>
-                  </Link>
-                </li>
-              </div>
+          </div>
+          <div className="formularios">
+            <div className="form1">
+              <li>
+                <Link to="/registrate">
+                  <p className="registro">Regístrate</p>
+                </Link>
+              </li>
+            </div>
+            <Link to="iniciar-sesion">
               <div className="form2">
                 <li>
-                  <Link to="iniciar-sesion">
-                    <p>Iniciar sesión</p>
-                  </Link>
+                  <p>Iniciar sesión</p>
                 </li>
               </div>
-            </div>
-          </ul>
-        </nav>
-      </header>
+            </Link>
+          </div>
+        </ul>
+      </nav>
 
       <Routes>
         <Route path="/" element={<Inicio />} />

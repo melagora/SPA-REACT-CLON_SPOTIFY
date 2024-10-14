@@ -1,7 +1,11 @@
-import React from 'react'
+import React from "react";
 
 export default function Registro() {
   return (
-    <div>Registro</div>
-  )
+    <section>
+      <div className="info">
+        <h1>Registro</h1>
+      </div>
+    </section>
+  );
 }
