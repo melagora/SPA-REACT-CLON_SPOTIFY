@@ -40,7 +40,6 @@ export default function BibliotecaBarraLateral() {
               <a
                 href="https://www.spotify.com/sv/legal/end-user-agreement/"
                 target="blank"
-                class="enlace"
               >
                 Legal
               </a>
@@ -49,7 +48,6 @@ export default function BibliotecaBarraLateral() {
               <a
                 href="https://www.spotify.com/sv/safetyandprivacy"
                 target="blank"
-                class="enlace"
               >
                 Seguridad y Centro de Privacidad
               </a>
@@ -58,7 +56,6 @@ export default function BibliotecaBarraLateral() {
               <a
                 href="https://www.spotify.com/sv/legal/privacy-policy/"
                 target="blank"
-                class="enlace"
               >
                 Política de Privacidad
               </a>
@@ -67,7 +64,6 @@ export default function BibliotecaBarraLateral() {
               <a
                 href="https://www.spotify.com/sv/legal/cookies-policy/"
                 target="blank"
-                class="enlace"
               >
                 Cookies
               </a>
@@ -76,7 +72,6 @@ export default function BibliotecaBarraLateral() {
               <a
                 href="https://www.spotify.com/sv/legal/privacy-policy/#s3"
                 target="blank"
-                class="enlace"
               >
                 Sobre los anuncios
               </a>
@@ -85,7 +80,6 @@ export default function BibliotecaBarraLateral() {
               <a
                 href="https://www.spotify.com/sv/accessibility"
                 target="blank"
-                class="enlace"
               >
                 Accesibilidad
               </a>
@@ -95,7 +89,6 @@ export default function BibliotecaBarraLateral() {
             <a
               href="https://www.spotify.com/sv/legal/cookies-policy/"
               target="blank"
-              class="enlace"
             >
               <p>Cookies</p>
             </a>
