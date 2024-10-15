@@ -73,6 +73,7 @@ nav div{
 }
 
 /*Etiqueta* homeLogo*/
+
 .homeLogo:hover::after, .searchWhite:hover::after, .exploreWhite:hover::after {
   content: "Inicio";
   position: absolute;
@@ -714,7 +715,6 @@ aside {
   border-radius: 5px; /* Opcional: agrega bordes redondeados */
 }
 
-
 .contenedorInfo_formulario input[type="text"] {
   border: none;
   margin: 5px;
@@ -747,6 +747,65 @@ aside {
   color: #89479e;
 }
 
+/*INICIAR SESION*/
+
+.contenedorInfo_titulo_iniciarSesion p{
+  align-items: center;
+  text-align: center;
+  line-height: 90%;
+  font-size: 60px;
+}
+
+.contenedorInfo_formulario_iniciarSesion{
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido dentro del contenedor */
+  background-color: #5c5c5c00;
+  width: 60%; /* Ancho del título */
+  border-radius: 5px; /* Opcional: agrega bordes redondeados */
+}
+
+.contenedorInfo_formulario_iniciarSesion input[type="text"] {
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: #8a479e00; 
+  width: 550px; 
+  height: 40px;
+  color: rgb(255, 255, 255);
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.contenedorInfo_formulario_iniciarSesion button{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  height: 45px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #89479e;
+}
+
+.contenedorInfo_formulario_iniciarSesion .input-error[type="text"] {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+}
+
+.contenedorInfo_formulario_iniciarSesion button:hover{
+  background-color: white;
+  color: #89479e;
+}
+
 /*Footer*/
   
 footer {
@@ -764,6 +823,7 @@ footer {
 .foot1, .foot2{
   padding: 10px;
 }
+
 .footer p{
   color: white;
 }
