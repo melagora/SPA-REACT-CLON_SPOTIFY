@@ -5,7 +5,7 @@ import Registrate from "../Componentes/Registro";
 export default function PieDePagina() {
   return (
     // <BrowserRouter>
-    <div className="footer">
+    <footer>
       <div className="foot1">
         <p className="tittleFooter">Muestra de KodiMusic </p>
         <p className="textFooter">
@@ -22,7 +22,7 @@ export default function PieDePagina() {
         </a>
       </div>
       {/* </Link> */}
-    </div>
+    </footer>
 
     //   {/* <Routes>
     //     <Route path="/registrate" element={<Registrate />} />

@@ -1,11 +1,10 @@
 import React from "react";
+import Registro from "./Registro";
 
 export default function IniciarSesion() {
   return (
-    <section>
-      <div className="info">
-        <h1>Iniciar Sesion</h1>
-      </div>
-    </section>
+    <>
+      <Registro/>
+    </>
   );
 }

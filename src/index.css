@@ -4,6 +4,7 @@
   font-weight: 400;
   color: rgba(255, 255, 255, 0.87);
   background-color: #000000;
+  display: grid;
 }
 
 .nav {
@@ -204,17 +205,18 @@ h1 {
 }
 
 aside {
-  position: fixed;
+  position: relative; /* Cambiado de fixed a relative */
   left: 0;
-  top: 0;
-  width: 30%;
-  height: 72%;
-  margin: 75px 0 0 7px;
-  background: linear-gradient( #131313, #89479e);
+  top: 0; /* Puedes eliminar esta propiedad o ajustar el valor según necesites */
+  width: 30%; /* Mantiene el ancho del aside */
+  height: calc(85vh - 75px); /* Ajusta la altura (75px es el alto del nav, 50px del footer) */
+  margin: 0 0 0 10px; /* Margen desde la parte superior */
+  background: linear-gradient(#131313, #89479e);
   padding: 10px;
   border-radius: 10px;
   text-align: center;
 }
+
 
 .biblioteca{
   display: flex;
@@ -427,16 +429,20 @@ aside {
 }
 
 /*etiqueta para cada ruta con la información*/
-.info{
-  margin: 5px 10px 5px 445px;
+
+.info {
+  margin: 0 10px 5px 0; /* Ajusta el margen superior para que empiece donde termina el nav */
   background: #191919;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
-  height: 437px;
+  height: calc(85vh - 75px); /* Ajusta la altura para que coincida con el aside */
+  width: calc(100% - 35%); /* Ocupa el ancho restante (30% del aside + 20px de margen) */
+  position: relative; /* Asegúrate de que se posicione correctamente en el flujo */
+  float: right; /* Alinea el contenedor a la derecha */
 }
 
 .contenedorPrincipalInfo{
-  height: 440px;
+  height: 72vh;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -567,6 +573,7 @@ aside {
 
 .secciones_explorarTodo{
   display: flex;
+  justify-content: center; 
   flex-wrap: wrap;
 }
 
@@ -584,6 +591,7 @@ aside {
 
 .secciones_explorarTodo div p{
   margin: 20px;
+  font-weight: bold;
   font-size: 30px;
   line-height: 1;
 }
@@ -636,9 +644,112 @@ aside {
   background-color: black;
 }
 
+/* Registrate */
+
+.header_logo_info{
+  display: flex;
+  justify-content: center;
+}
+
+.logo_header_logo_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_header_logo_info {
+  background-color: #212121; /* Cambia el color según prefieras */
+  border-radius: 50%; /* Hace el contenedor circular */
+  width: 75px; /* Ancho del círculo */
+  height: 75px; /* Alto del círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Para evitar que la imagen sobresalga */
+}
+
+.logo_header_logo_info:hover{
+  background-color: #ffffff;
+}
+
+.logo_header_logo_info img {
+  width: 40px;
+  max-width: 100%; /* Asegura que la imagen no sobrepase el contenedor */
+  max-height: 100%; /* Asegura que la imagen no sobrepase el contenedor */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+.contenedorInfo {
+  background-color: #5c5c5c00;
+  border-radius: 20px;
+  height: 75%;
+  display: flex; /* Habilita el uso de Flexbox */
+  justify-content:center; /* Centra los elementos horizontalmente */
+  flex-wrap: wrap;
+}
+
+.contenedorInfo_titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido dentro del contenedor */
+  background-color: #5c5c5c00;
+  width: 60%; /* Ancho del título */
+  padding: 10px; /* Opcional: agrega un poco de padding */
+  border-radius: 5px; /* Opcional: agrega bordes redondeados */
+}
+
+.contenedorInfo_titulo p{
+  align-items: center;
+  text-align: center;
+  line-height: 90%;
+  font-size: 60px;
+}
+
+.contenedorInfo_formulario{
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido dentro del contenedor */
+  background-color: #5c5c5c00;
+  width: 60%; /* Ancho del título */
+  border-radius: 5px; /* Opcional: agrega bordes redondeados */
+}
+
+
+.contenedorInfo_formulario input[type="text"] {
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: #8a479e00; 
+  width: 550px; 
+  height: 40px;
+  color: rgb(255, 255, 255);
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.contenedorInfo_formulario button{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  height: 45px;
+  color: white;
+  font-size: 20px;
+  background-color: #89479e;
+}
+
+.contenedorInfo_formulario button:hover{
+  background-color: white;
+  color: #89479e;
+}
+
 /*Footer*/
   
-.footer {
+footer {
   display: flex;
   justify-content: space-around;
   position: fixed;
