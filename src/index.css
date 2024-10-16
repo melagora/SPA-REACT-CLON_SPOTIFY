@@ -31,6 +31,11 @@ a:hover{
   color: white;
 }
 
+nav{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 nav ul{
   background-color: black;
   width: 100%;
@@ -495,10 +500,11 @@ aside {
   padding: 20px;
   background-color: #191919;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .card_por_artista{
-  width: 170px;
+  width: 160px;
   padding: 20px;
 }
 
@@ -587,7 +593,7 @@ aside {
 }
 
 .secciones_explorarTodo div:hover{
-  background-color: #89479e; 
+  border: solid 3px white;
 }
 
 .secciones_explorarTodo div p{
@@ -863,4 +869,278 @@ footer {
 
 .btnFooter:hover p{
   color: white;
+}
+
+/* adaptación para dispositivos de pantallas de la mayoria de telefonos Celulares */
+@media only screen and (max-width: 400px) {
+  nav ul {
+    flex-direction: column; /* Cambia la dirección de flexbox a columna */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+  }
+
+  .logo1, .buscador, .formularios{
+    padding: 5px;
+    align-items: center;
+  }
+
+  .logo1{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .formularios{
+    width: 100%;
+    justify-content: center;
+  }
+
+
+  .input-container{
+    background-color: #89479e;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 40px; /* Ajusta el radio para cambiar la redondez */
+    font-weight: bold;
+    height: 50px;
+    width: 315px;
+    align-items: center;
+  }
+
+  aside {
+    position: relative; /* Cambiado de fixed a relative */
+    top: 20px;
+    width: 39%; /* Mantiene el ancho del aside */
+    height: calc(70vh - 100px); /* Ajusta la altura (75px es el alto del nav, 50px del footer) */
+    width: calc(120% - 30%); /* Ocupa el ancho restante (30% del aside + 20px de margen) */
+    margin: 0 0 0 10px; /* Margen desde la parte superior */
+    background: linear-gradient(#131313, #89479e);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+  }
+
+  .bibliotecaLateralContendor1{
+    background-color: #000000;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    font-size: 14px;
+  }
+
+  .info {
+    border-radius: 20px;
+    top: 10px;
+    left: 10px;
+    height: calc(80vh - 60px); /* Ajusta la altura para que coincida con el aside */
+    width: calc(120% - 30%); /* Ocupa el ancho restante (30% del aside + 20px de margen) */
+    flex: 2; /* Ocupa el doble de espacio que el aside */
+    margin: 0; /* Elimina los márgenes innecesarios */
+    float: none; /* Elimina el flotado */
+  }
+
+  .contenedorPrincipalInfo{
+    display: flex;
+  }
+  
+  .artistas_populares{
+    padding: 20px;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tittleFooter{
+    padding-top: 15px;
+    font-size: 15px;
+    color: white;
+  }
+
+  .textFooter{
+    display: none;
+  }
+
+  .btnFooter{
+    border-radius: 90px;
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+  }
+
+  .secciones_explorarTodo div{
+    width: 135px;
+    height: 100px;
+    margin: 20px 20px 0 0 ;
+    border-radius: 30px;
+  }
+  
+  .secciones_explorarTodo div p{
+    margin: 20px;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .contenedorInfo_formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido dentro del contenedor */
+    background-color: #5c5c5c00;
+    width: 60%; /* Ancho del título */
+    border-radius: 5px; /* Opcional: agrega bordes redondeados */
+  }
+  
+  .contenedorInfo_formulario input[type="text"] {
+    width: 300px; 
+  }
+
+  .contenedorInfo_titulo p{
+    font-size: 40px;
+  }
+
+  .contenedorInfo_formulario_iniciarSesion input[type="text"] {
+    width: 300px; 
+  }
+
+}
+
+/* adaptación para dispositivos de pantallas de algunos celulares de mayor pixelaje y tablets*/
+@media only screen and (max-width: 1020px) {
+  nav ul {
+    flex-direction: column; /* Cambia la dirección de flexbox a columna */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+  }
+
+  .logo1, .buscador, .formularios{
+    padding: 5px;
+    align-items: center;
+  }
+
+  .logo1{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .buscador{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .formularios{
+    width: 100%;
+    justify-content: center;
+  }
+
+
+  .input-container{
+    background-color: #89479e;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 40px; /* Ajusta el radio para cambiar la redondez */
+    font-weight: bold;
+    height: 50px;
+    width: 300px;
+    align-items: center;
+  }
+
+  aside {
+    position: relative; /* Cambiado de fixed a relative */
+    top: 20px;
+    width: 39%; /* Mantiene el ancho del aside */
+    height: 70vh; /* Ajusta la altura (75px es el alto del nav, 50px del footer) */
+    width: 90%; /* Ocupa el ancho restante (30% del aside + 20px de margen) */
+    margin: 0 0px 0 10px; /* Margen desde la parte superior */
+    background: linear-gradient(#131313, #89479e);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+  }
+
+  .bibliotecaLateralContendor1{
+    background-color: #000000;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    font-size: 14px;
+  }
+
+  .info {
+    border-radius: 20px;
+    top: 10px;
+    left: 10px;
+    height: 80vh; /* Ajusta la altura para que coincida con el aside */
+    width: 90%; /* Ocupa el ancho restante (30% del aside + 20px de margen) */
+    flex: 2; /* Ocupa el doble de espacio que el aside */
+    margin: 0; /* Elimina los márgenes innecesarios */
+    float: none; /* Elimina el flotado */
+  }
+
+  .contenedorPrincipalInfo{
+    display: flex;
+  }
+  
+  .artistas_populares{
+    padding: 20px;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tittleFooter{
+    padding-top: 15px;
+    font-size: 15px;
+    color: white;
+  }
+
+  .textFooter{
+    display: none;
+  }
+
+  .btnFooter{
+    border-radius: 90px;
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+  }
+
+  .secciones_explorarTodo div{
+    width: 135px;
+    height: 100px;
+    margin: 20px 20px 0 0 ;
+    border-radius: 30px;
+  }
+  
+  .secciones_explorarTodo div p{
+    margin: 20px;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .contenedorInfo_formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido dentro del contenedor */
+    background-color: #5c5c5c00;
+    width: 60%; /* Ancho del título */
+    border-radius: 5px; /* Opcional: agrega bordes redondeados */
+  }
+  
+  .contenedorInfo_formulario input[type="text"] {
+    width: 300px; 
+  }
+
+  .contenedorInfo_titulo p{
+    font-size: 40px;
+  }
+
+  .contenedorInfo_formulario_iniciarSesion input[type="text"] {
+    width: 300px; 
+  }
 }
