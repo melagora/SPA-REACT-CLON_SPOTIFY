@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/205dc064-4957-4024-a320-674de2e53e82)
+
 # Actividad 3 de la Semana 3 - KODIGO (utilizando React + Vite)
 
 Se debe de desarrollar una SPA (Single Page Application) llamada Kodigo Music debe de tomar de ejemplos de referencia plataformas lideres en la industria de la música digital asi como: Spofify, Deezer, Apple Music.
